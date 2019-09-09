@@ -1,5 +1,7 @@
 #!/bin/bash
 
+basePath="/root/log"
+
 #
 # Requirements
 #
@@ -16,6 +18,11 @@ then
     echo "'xdotool' was not found in PATH"
     exit 1
 fi
+
+#Copy files
+mkdir /root/log
+cp log.sh /root/log/
+cp
 
 
 # Create sqlite DB
