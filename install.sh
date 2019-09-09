@@ -1,9 +1,19 @@
 #!/bin/bash
 
+#
+# Requirements
+#
+
 # check if sqlite is available
 if ! hash sqlite3 2>/dev/null
 then
     echo "'sqlite3' was not found in PATH"
+    exit 1
+fi
+# check if xdotool is available
+if ! hash xdotool 2>/dev/null
+then
+    echo "'xdotool' was not found in PATH"
     exit 1
 fi
 
