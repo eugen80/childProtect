@@ -4,7 +4,7 @@ shopt -s extglob
 current_user=$(whoami)
 
 #/root/log/winlist.sh | while IFS= read -r line ; do
-/root/log/currentwin | while IFS= read -r line ; do
+/root/log/currentwin.sh | while IFS= read -r line ; do
 ### Trim leading whitespaces ###
 line="${line##*( )}"
 
