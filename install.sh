@@ -19,11 +19,10 @@ then
     exit 1
 fi
 
-#Copy files
-mkdir /root/log
-cp log.sh /root/log/
-cp
-
+# Copy files
+mkdir $basePath
+cp log.sh $basePath/
+cp currentwin.sh $basePath/
 
 # Create sqlite DB
 FILE="/log.sqlite"
