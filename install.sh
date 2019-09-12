@@ -18,6 +18,12 @@ then
     echo "'xdotool' was not found in PATH"
     exit 1
 fi
+# check if osd_cat is available
+if ! hash osd_cat 2>/dev/null
+then
+    echo "'osd_cat' was not found in PATH"
+    exit 1
+fi
 
 # Copy files
 if test -d "$basePath"; then
