@@ -33,6 +33,8 @@ else
   mkdir $basePath
   cp log.sh $basePath/
   cp currentwin.sh $basePath/
+  mkdir $basePath/reports
+  cp reports/fun-min-today-sum.sh $basePath/reports
 fi
 
 # Create sqlite DB
