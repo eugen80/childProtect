@@ -13,11 +13,6 @@ config['fun']['apps']['minecraft'] = 1
 config['fun']['apps']['youtube'] = 1
 config['fun']['apps']['minetest'] = 1
 
-config['browser'] = {}
-config['browser']['maxMin'] = 90
-config['browser']['apps'] = {}
-config['browser']['apps']['firefox'] = 1
-
 config['communication'] = {}
 config['communication']['maxMin'] = 60
 config['communication']['apps'] = {}
