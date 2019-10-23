@@ -2,5 +2,5 @@
 
 basePath="/root/log"
 
-rm /log.sqlite
-rm $basePath -r
+rm -v /log.sqlite
+rm -v -r $basePath
