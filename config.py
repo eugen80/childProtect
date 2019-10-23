@@ -9,14 +9,14 @@ config = {}
 config['fun'] = {}
 config['fun']['maxMin'] = 90
 config['fun']['apps'] = {}
-config['fun']['apps']['minecraft'] = 1
-config['fun']['apps']['youtube'] = 1
-config['fun']['apps']['minetest'] = 1
+config['fun']['apps']['minecraft'] = '/usr/bin/java'
+config['fun']['apps']['Mozilla Firefox (Privater Modus)'] = '/usr/bin/firefox'
+config['fun']['apps']['minetest'] = ''
 
 config['communication'] = {}
 config['communication']['maxMin'] = 60
 config['communication']['apps'] = {}
-config['communication']['apps']['whatsup'] = 1
+config['communication']['apps']['whatsup'] = ''
 
 config['productive'] = {}
 config['productive']['maxMin'] = 180
@@ -24,6 +24,6 @@ config['productive']['apps'] = {}
 config['productive']['apps']['schlaukopf'] = 1
 
 config['misc'] = {}
-config['misc']['maxMin'] = 180
+config['misc']['maxMin'] = 10
 config['misc']['apps'] = {}
-config['misc']['apps']['konsole'] = 1
+config['misc']['apps']['konsole'] = '/usr/bin/konsole'
