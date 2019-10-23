@@ -13,4 +13,3 @@ line="${line%%*( )}"
 
 sqlite3 /log.sqlite "INSERT INTO log (window, user) VALUES ('$line', '$current_user')"
 done
-
