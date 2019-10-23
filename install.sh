@@ -30,11 +30,11 @@ if test -d "$basePath"; then
   echo "$basePath already exists"
 else
   echo "$basePath does not exist"
-  mkdir $basePath
-  cp log.sh $basePath/
-  cp currentwin.sh $basePath/
-  mkdir $basePath/reports
-  cp reports/fun-min-today-sum.sh $basePath/reports
+  mkdir -v $basePath
+  cp -v log.sh $basePath/
+  cp -v currentwin.sh $basePath/
+  mkdir -v $basePath/reports
+  cp -v reports/fun-min-today-sum.sh $basePath/reports
 fi
 
 # Create sqlite DB
@@ -44,6 +44,7 @@ if test -f "$FILE"; then
     exit 1
 else
     echo "$FILE does not exist"
+    echo "try to create $FILE"
     sqlite3 $FILE < sql/table_log
 fi
 
