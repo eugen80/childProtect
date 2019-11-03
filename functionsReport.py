@@ -4,15 +4,18 @@
 import config as cfg
 import functionsDb as fnDb
 
-def getTotalToday(grp):
-    sql = "SELECT count(id) FROM log WHERE"
+def getTotalToday(grp = 'all'):
+    sql = "SELECT count(id) FROM log"
     where = []
-    for key, value in cfg.config[grp]['apps'].items():
-        where.append("window LIKE '%" + key + "%'")
+    whereStr = ''
 
-    whereStr = "(" + " OR ".join(where) + ")"
-    sql = (sql + whereStr +
-        " AND datetime >= datetime('now', 'localtime', 'start of day')" +
+    if grp != 'all':
+        for key, value in cfg.config[grp]['apps'].items():
+            where.append("window LIKE '%" + key + "%'")
+        whereStr = "(" + " OR ".join(where) + ") AND"
+
+    sql = (sql + ' WHERE ' + whereStr +
+        " datetime >= datetime('now', 'localtime', 'start of day')" +
         " AND datetime < datetime('now', 'localtime');")
 
     cursor = fnDb.initSqliteConnection()
