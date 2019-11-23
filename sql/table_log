@@ -1,0 +1,5 @@
+CREATE TABLE log (
+id INTEGER PRIMARY KEY,
+window TEXT,
+datetime DATE DEFAULT (datetime('now','localtime')),
+user TEXT);
