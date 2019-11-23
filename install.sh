@@ -49,8 +49,8 @@ else
 fi
 
 # Manual tasks
-echo "Add to cronjob as root:\n"
+echo "Add to cronjob as root:"
 echo '* * * * * export DISPLAY=":0.0"; /root/log/log.sh'
-echo "\n"
+echo ""
 
 echo "DONE!"
