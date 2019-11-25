@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+MAILTO = ''
+MAILFROM = ''
+MAILSMTP = ''
+MAILPASS = ''
+
 # config[GROUP]             app group
 # config[GROUP][maxMin]     allowed Minutes per day
 # config[GROUP][grp]        same groups share 'maxMin'
@@ -11,6 +16,7 @@ config['fun']['maxMin'] = 90
 config['fun']['apps'] = {}
 config['fun']['apps']['minecraft'] = '/usr/bin/java'
 config['fun']['apps']['Mozilla Firefox (Privater Modus)'] = '/usr/bin/firefox'
+config['fun']['apps']['firefox'] = '/usr/bin/firefox'
 config['fun']['apps']['minetest'] = ''
 
 config['communication'] = {}
