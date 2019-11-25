@@ -54,7 +54,8 @@ fi
 
 # Manual tasks
 echo "1. Add your mail credentials to config.py"
-echo "2. Add to cronjob as root:"
+echo "2. Add 'x2host +' to user's dir .xinitrc file"
+echo "3. Add to cronjob as root:"
 echo 'MAILTO=""'
 echo '* * * * * export DISPLAY=":0.0"; /root/log/log.sh'
 echo '* * * * * export DISPLAY=":0.0"; /root/log/log.sh'
