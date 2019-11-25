@@ -35,6 +35,7 @@ else
   cp -v currentwin.sh $basePath/
   cp -v functionsReport.py $basePath/
   cp -v reportMail.py $basePath/
+  cp -v config.py $basePath/
   mkdir -v $basePath/reports
   cp -v reports/fun-min-today-sum.sh $basePath/reports
 fi
