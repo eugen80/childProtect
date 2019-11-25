@@ -33,6 +33,8 @@ else
   mkdir -v $basePath
   cp -v log.sh $basePath/
   cp -v currentwin.sh $basePath/
+  cp -v functionsReport.py $basePath/
+  cp -v reportMail.py $basePath/
   mkdir -v $basePath/reports
   cp -v reports/fun-min-today-sum.sh $basePath/reports
 fi
@@ -52,6 +54,7 @@ fi
 echo "1. Add your mail credentials to config.py"
 echo "2. Add to cronjob as root:"
 echo 'MAILTO=""'
+echo '* * * * * export DISPLAY=":0.0"; /root/log/log.sh'
 echo '* * * * * export DISPLAY=":0.0"; /root/log/log.sh'
 
 echo "DONE!"
