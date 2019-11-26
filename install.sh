@@ -38,7 +38,6 @@ else
   cp -v config.py $basePath/
   cp -v functionsDb.py $basePath/
   mkdir -v $basePath/reports
-  cp -v reports/fun-min-today-sum.sh $basePath/reports
 fi
 
 # Create sqlite DB
